@@ -18,4 +18,4 @@ print(f"{a} + {b} 는 몇일까? " )
 
 # 012302 문자 하나하나 숫자로 mapping해서 리스트 담기
 # ex) input이 010231일 때 a = [0, 1, 0, 2, 3, 1]
-a = list(map(int,input()))
+a = list(map(int,input()))  

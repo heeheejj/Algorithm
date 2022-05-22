@@ -2,8 +2,6 @@
 from collections import deque
 
 def bfs(x, y):
-  result = 0
-  
   queue = deque()
   queue.append((x, y))
   while queue:
