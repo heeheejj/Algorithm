@@ -1,23 +1,20 @@
-# 주석 없는 ver (재귀)
-def combinations(lst, k):
-    if k == 0:
-        return [[]]
-    arr = []
-    for x in range(0, len(lst)):
-        m = lst[x]
-        _lst = lst[x+1:]
-        for p in combinations(_lst, k-1):
-            arr.append([m]+p)
-    return arr
+# deque 이용
+from collections import deque
 
-# 주석 ver (재귀)
-def combinations2(lst, k):
-    if k == 0:
-        return [[]]
-    arr = []    # 결과 리스트
-    for x in range(0, len(lst)):    # lst 길이만큼 반복
-        m = lst[x]  # 리스트의 현재 원소 기억
-        _lst = lst[x+1:]    # 리스트에서 현재 원소 이후부터 다시 리스트 만들기
-        for p in combinations(_lst, k-1):   # 새로 만든 리스트에서 k-1만큼 지금 이 함수 재귀호출
-            arr.append([m]+p)   # arr에 현재원소 + 나머지
-    return arr
+def dfs(deq, depth):
+    if len(deq) == M:  # 종료 조건 1 : M개를 모두 선택했을 때
+        print(deq)  # 선택 후의 알고리즘 호출
+        return
+    elif depth == len(some_list):  # 종료 조건 2: 리스트의 마지막 까지 탐색했을 때
+        return
+ 
+    # 현재 depth의 값 포함 재귀 호출
+    deq.append(some_list[depth])
+    dfs(deq, depth + 1)
+ 
+    # 현재 depth의 값 미포함 재귀 호출
+    deq.pop()
+    dfs(deq, depth + 1)
+
+k = 3
+dfs(deq, k)
