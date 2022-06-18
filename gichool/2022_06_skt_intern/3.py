@@ -1,3 +1,5 @@
+# 이미 정렬되어있으므로 이분탐색 써야 시간초과 안난다고 함 -> 수정 필요
+
 def solution(n, plans, clients):
     answer = [0]*len(clients)
     
