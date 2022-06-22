@@ -1,4 +1,5 @@
 # 풀다 말음
+# dfs 쓰는게 맞나?
 def dfs(grid, x, y):
     if x < 0 or x >= n or y < 0 or y >= m:
         return
