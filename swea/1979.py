@@ -1,8 +1,8 @@
 # 어디에 단어가 들어갈 수 있을까
 
-import sys
+# import sys
 
-sys.stdin = open("input.txt", "r")
+# sys.stdin = open("input.txt", "r")
 
 T = int(input())
 

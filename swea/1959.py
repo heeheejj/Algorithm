@@ -1,6 +1,6 @@
 # 두 개의 숫자열
-import sys
-sys.stdin = open("input.txt", "r")
+# import sys
+# sys.stdin = open("input.txt", "r")
 T = int(input())
 
 for t in range(1, T+1):
