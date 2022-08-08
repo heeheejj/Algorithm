@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-// 누적합(Prefix Sum)으로 풀기
+// 누적합(Prefix Sum)으c로 풀기
 public class Solution_2001_파리퇴치_정희주 {
     public static void main(String[] args) throws IOException {
         System.setIn(new FileInputStream("./input.txt"));
